@@ -20,14 +20,14 @@
 </head>
 
 <body>
-    <section class="container mt-8 px-4 grid grid-cols-2">
+    <section class="container mx-auto mt-8 px-4 grid grid-cols-2 ">
         <!-- images section -->
         <div class="w-1/2 ml-32">
             <img class="ms-auto" src="images/mac.png" alt="">
         </div>
 
         <!-- specification sction  -->
-        <div class="mr-8 my-8">
+        <div class="mr-8">
             <h1 class="text-2xl font-bold	">Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
 
             <p class="text-sm mt-8">M1 features our latest Neural Engine. Its 16‑core design is capable of executing a
@@ -35,54 +35,72 @@
                 operations per second. In fact, with a powerful 8‑core GPU, machine learning accelerators, and the
                 Neural Engine, the entire M1 chip is designed to excel at machine learning.</p>
 
+            <!-- Memory  -->
             <div>
                 <h4 class="font-bold mt-8">Memory</h4>
-                <button
+                <button id="memory-8gb"
                     class="border-2  border-gray-400 text-sm hover:bg-purple-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 p-2 rounded">8
                     GB unified memory</button>
-                <button
+                <button id="memory-16gb"
                     class="border-2  border-gray-400 text-sm hover:bg-purple-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 p-2 rounded">16
                     GB unified memory</button>
 
             </div>
+
+            <!-- storage  -->
             <div>
                 <h4 class="font-bold mt-8">Storage</h4>
-                <button
+                <button id="storage-256gb"
                     class="border-2  border-gray-400 text-sm hover:bg-purple-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 p-2 rounded">256GB
                     SSD storage</button>
-                <button
+                <button id="storage-512gb"
                     class="border-2  border-gray-400 text-sm hover:bg-purple-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 p-2 rounded">512GB
                     SSD storage</button>
-                <button
+                <button id="storage-1tb"
                     class="border-2  border-gray-400 text-sm hover:bg-purple-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 p-2 rounded">1TB
                     SSD storage</button>
 
             </div>
+
+            <!-- Delivery Option  -->
             <div>
                 <h4 class="font-bold mt-8">Chose Your Delivery option</h4>
-                <button
+                <button id="free-delivery"
                     class="border-2  border-gray-400 text-sm hover:bg-purple-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 p-2 rounded">Friday,
                     Aug-25 Free Prime Delivery</button>
-                <button
+                <button id="delivery-charge"
                     class="border-2  border-gray-400 text-sm hover:bg-purple-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 p-2 rounded">Friday,
                     Aug-20 Delivery delivery Charge $20</button>
 
             </div>
+
+            <!-- Cost calculation  -->
             <div class="my-8">
-                <p class="font-bold">Best Price <span class="ml-32">$</span><span>1299</span></p>
+                <p class="font-bold">Best Price <span class="ml-32">$</span><span id="best-price">1299</span></p>
                 <hr class="w-1/2 my-2 border">
-                <p class="font-bold">Extra memory cost <span class="ml-14">$</span><span>0</span></p>
+
+                <p class="font-bold">Extra memory cost <span class="ml-14">$</span><span id="extra-memory-cost">0</span>
+                </p>
+
                 <hr class="w-1/2 my-2 border">
-                <p class="font-bold">Extra storage cost <span class="ml-16">$</span><span>0</span></p>
+
+                <p class="font-bold">Extra storage cost <span class="ml-16">$</span><span
+                        id="extra-storage-cost">0</span></p>
+
                 <hr class="w-1/2 my-2 border">
-                <p class="font-bold">Delivery Charge <span class="ml-20">$</span><span>0</span></p>
+
+                <p class="font-bold">Delivery Charge <span class="ml-20">$</span><span id="extra-delivery-cost">0</span>
+                </p>
+
                 <hr class="w-1/2 my-2 border border-black">
-                <p class="font-bold">Total Price <span class="ml-32">$</span><span>0</span></p>
+
+                <p class="font-bold">Total Price <span class="ml-32">$</span><span id="total-price">0</span></p>
             </div>
 
+            <!-- Promo Apply Button  -->
             <div>
                 <input class="border border-gray-400 p-2 rounded" type="text" name="" id=""> <button
-                    class="bg-red-600	text-white p-2 rounded">Apply</button>
+                    class="bg-red-600	text-white p-2 rounded focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-opacity-50 ">Apply</button>
             </div>
 
 
@@ -90,9 +108,11 @@
 
 
     </section>
-    <hr class=" my-2 border">
+
+    <!-- Promo Total  -->
     <div class=" container mx-auto mb-8">
-        <h1 class="text-2xl font-bold text-center">Total: $<span>1299</span></s></h1>
+        <hr class=" my-2 border text-center">
+        <h1 class="text-4xl font-bold text-center">Total: $<span>1299</span></s></h1>
     </div>
 
     <!-- JavaScript link  -->
