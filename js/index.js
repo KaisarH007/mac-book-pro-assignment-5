@@ -6,17 +6,15 @@ const storage1Tb = document.getElementById('storage-1tb');
 const freeDeliver = document.getElementById('free-delivery');
 const deliveryCharge = document.getElementById('delivery-charge');
 
-
-const bestPriceField = document.getElementById('best-price');
-
 let extraMemoryField = document.getElementById('extra-memory-cost');
 let extraStorageField = document.getElementById('extra-storage-cost');
 let extraDeliveryField = document.getElementById('extra-delivery-cost');
 
+const bestPriceField = document.getElementById('best-price');
 const totalPrice = document.getElementById('total-price');
 
 
-
+//Total Price add
 function updateTotalPrice() {
     const extraMemoryCost = Number(extraMemoryField.innerText);
     const extraStorageCost = Number(extraStorageField.innerText);
@@ -61,15 +59,14 @@ deliveryCharge.addEventListener('click', function () {
 })
 
 
-
-let promoField = document.getElementById('promo-field');
+//Promo price
+const promoField = document.getElementById('promo-field');
 let promoPrice = document.getElementById('promo-price');
-console.log(promoPrice)
 const promoButton = document.getElementById('promo-button');
 
 promoButton.addEventListener('click', function () {
-    if (promoField = "stevekaku") {
-        promoDiscountPrice = Number(promoPrice.innerText) * 0.75;
+    if (promoField.value == "stevekaku") {
+        promoDiscountPrice = Number(totalPrice.innerText) * 0.75;
         promoPrice.innerText = promoDiscountPrice;
 
     }
