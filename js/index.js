@@ -16,12 +16,14 @@ let extraDeliveryField = document.getElementById('extra-delivery-cost');
 const totalPrice = document.getElementById('total-price');
 
 
+
 function updateTotalPrice() {
     const extraMemoryCost = Number(extraMemoryField.innerText);
     const extraStorageCost = Number(extraStorageField.innerText);
     const extraDeliveryCharge = Number(extraDeliveryField.innerText);
     const bestPrice = Number(bestPriceField.innerText);
     totalPrice.innerText = extraMemoryCost + extraStorageCost + extraDeliveryCharge + bestPrice;
+    promoPrice.innerText = totalPrice.innerText;
 }
 
 
@@ -56,4 +58,21 @@ freeDeliver.addEventListener('click', (function () {
 deliveryCharge.addEventListener('click', function () {
     extraDeliveryField.innerText = '20';
     updateTotalPrice()
+})
+
+
+
+let promoField = document.getElementById('promo-field');
+let promoPrice = document.getElementById('promo-price');
+console.log(promoPrice)
+const promoButton = document.getElementById('promo-button');
+
+promoButton.addEventListener('click', function () {
+    if (promoField = "stevekaku") {
+        promoDiscountPrice = Number(promoPrice.innerText) * 0.75;
+        promoPrice.innerText = promoDiscountPrice;
+
+    }
+
+
 })
